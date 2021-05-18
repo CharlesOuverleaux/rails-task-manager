@@ -3,3 +3,7 @@
 <p>Completed: <%= @tasks.completed %></p>
 <%= link_to "Return to task list", tasks_path %>
 <%= link_to "Create a new task", tasks_new_path %>
+<%= link_to "Edit task", task_edit_path %>
+
+<%= link_to "Delete", task_destroy_path(@tasks.id), method: :delete, data: { confirm: "Are you sure?" } %>
+
