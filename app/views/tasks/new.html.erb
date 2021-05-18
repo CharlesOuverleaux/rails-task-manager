@@ -1,0 +1,10 @@
+<h1>New task creator</h1>
+
+
+<%= form_for(@task) do |f| %>
+  <p>Title</p>
+  <%= f.text_field :title %>
+  <p>Details</p>
+  <%= f.text_field :details %>
+  <%= f.submit %>
+<% end %>
